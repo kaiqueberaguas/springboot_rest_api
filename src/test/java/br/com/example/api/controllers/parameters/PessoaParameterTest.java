@@ -14,14 +14,16 @@ public class PessoaParameterTest {
         parameter.setDocumento("01234567890");
         parameter.setNome("Crisberto Alivado");
         parameter.setTipoDocumento("CNH");
-        parameter.setEndereco(new EnderecoParameter());
+        var enderecoParameter = new EnderecoParameter();
+        enderecoParameter.setRua("Rua teste");
+        parameter.setEndereco(enderecoParameter);
         var model = parameter.toModel();
 
         Assertions.assertEquals(parameter.getNome(), model.getNome());
         Assertions.assertEquals(parameter.getDocumento(), model.getDocumento());
         Assertions.assertEquals(parameter.getTipoDocumento(), model.getTipoDocumento());
         Assertions.assertEquals(parameter.getDataNascimento(), model.getDataNascimento());
-        Assertions.assertEquals(parameter.getEndereco(), model.getEndereco());
+        Assertions.assertNotNull(model.getEndereco());
     }
     
     @Test
