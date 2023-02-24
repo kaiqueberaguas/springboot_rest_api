@@ -58,14 +58,15 @@ public class PessoaParameter {
     public void setTipoDocumento(String tipoDocumento) {
         this.tipoDocumento = tipoDocumento;
     }
-    
-    public Pessoa toModel(){
+
+    public Pessoa toModel() {
         var pessoa = new Pessoa();
         pessoa.setNome(this.nome);
         pessoa.setDocumento(this.documento);
         pessoa.setTipoDocumento(this.tipoDocumento);
         pessoa.setDataNascimento(this.dataNascimento);
-        pessoa.setEndereco(this.endereco.toModel());
+        if (this.endereco != null)
+            pessoa.setEndereco(this.endereco.toModel());
         return pessoa;
     }
 }
