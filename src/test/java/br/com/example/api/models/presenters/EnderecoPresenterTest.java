@@ -1,4 +1,4 @@
-package br.com.example.api.controllers.presenters;
+package br.com.example.api.models.presenters;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

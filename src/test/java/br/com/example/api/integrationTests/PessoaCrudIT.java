@@ -15,9 +15,9 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 
-import br.com.example.api.controllers.parameters.EnderecoParameter;
-import br.com.example.api.controllers.parameters.PessoaParameter;
-import br.com.example.api.controllers.presenters.PessoaPresenter;
+import br.com.example.api.models.parameters.EnderecoParameter;
+import br.com.example.api.models.parameters.PessoaParameter;
+import br.com.example.api.models.presenters.PessoaPresenter;
 
 @Profile("integrations")
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)

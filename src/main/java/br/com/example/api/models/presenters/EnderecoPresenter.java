@@ -1,4 +1,4 @@
-package br.com.example.api.controllers.presenters;
+package br.com.example.api.models.presenters;
 
 import br.com.example.api.models.Endereco;
 

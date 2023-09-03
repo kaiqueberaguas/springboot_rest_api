@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.example.api.controllers.parameters.PessoaParameter;
-import br.com.example.api.controllers.presenters.PessoaPresenter;
+import br.com.example.api.models.parameters.PessoaParameter;
+import br.com.example.api.models.presenters.PessoaPresenter;
 import br.com.example.api.services.PessoaService;
 import io.swagger.annotations.Api;
 

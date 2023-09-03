@@ -1,4 +1,4 @@
-package br.com.example.api.controllers.parameters;
+package br.com.example.api.models.parameters;
 
 import java.time.LocalDate;
 

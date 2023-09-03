@@ -1,6 +1,8 @@
-package br.com.example.api.controllers.parameters;
+package br.com.example.api.models.parameters;
 
 import java.time.LocalDate;
+
+import javax.validation.constraints.NotBlank;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -9,14 +11,18 @@ import br.com.example.api.models.Pessoa;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PessoaParameter {
 
+    @NotBlank
     private String nome;
 
     private LocalDate dataNascimento;
 
+    @NotBlank
     private EnderecoParameter endereco;
-
+    
+    @NotBlank
     private String documento;
-
+    
+    @NotBlank
     private String tipoDocumento;
 
     public String getNome() {

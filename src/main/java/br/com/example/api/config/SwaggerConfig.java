@@ -18,31 +18,31 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
     
-    @Value("${application.info.name}")
+    @Value("${info.name}")
     private String nome;
 
-    @Value("${application.info.description}")
+    @Value("${info.description}")
     private String descricao;
 
-    @Value("${application.info.version}")
+    @Value("${info.version}")
     private String versao;
 
-	@Value("${application.info.package}")
+	@Value("${info.package}")
     private String pacote;
 
-    @Value("${application.info.contact.site}")
+    @Value("${info.contact.site}")
     private String site;
 
-    @Value("${application.info.contact.name}")
+    @Value("${info.contact.name}")
     private String desenvolvedor;
 
-    @Value("${application.info.contact.email}")
+    @Value("${info.contact.email}")
     private String email;
 
-    @Value("${application.info.license}")
+    @Value("${info.license}")
     private String licenca;
     
-    @Value("${application.info.license.url}")
+    @Value("${info.license.url}")
     private String licancaUrl;
 
 	@Bean
